@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Lap 1</title>
+  <link rel="stylesheet" type="text/css" href="Layout_01.css">
+</head>
+<body>
+ 	<!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "103872122052883");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+	<!-- HEADER -->
+ 	<div id="page_header"></div>
+
+ 	<!-- MAIN -->
+ 	<div id="page_main">
+ 		<div id="page_menu">
+ 			<ul>
+ 				<li class="menu-item"><a href="#">Item 1</a></li>
+ 				<li class="menu-item"><a href="#">Item 2</a></li>
+ 				<li class="menu-item"><a href="#">Item 3</a></li>
+ 				<li class="menu-item"><a href="#">Item 4</a></li>
+ 				<li class="menu-item"><a href="#">Item 5</a></li>
+ 				<li class="menu-item"><a href="#">Item 6</a></li>
+ 			</ul>
+ 		</div>
+ 		<div id="page_content">
+ 			<h1>Đăng ký thông tin</h1>
+ 			<form action="#" method="POST">
+ 				<table>
+ 					<tr>
+ 						<td class="label_input">User name *</td>
+ 						<td>
+ 							<input type="text" name="username" id="inp_usn" placeholder="Username" required>
+ 						</td>
+ 					</tr>
+
+ 					<tr>
+ 						<td class="label_input">Password *</td>
+ 						<td>
+ 							<input type="Password" name="Password" id="inp_pwd" placeholder="Password" required>
+ 						</td>
+ 					</tr>
+
+ 					<tr>
+ 						<td class="label_input">Email *</td>
+ 						<td>
+ 							<input type="Email" name="email" id="inp_email" placeholder="Email" required>
+ 						</td>
+ 					</tr>
+
+ 					<tr>
+ 						<td class="label_input">Ngày sinh</td>
+ 						<td>
+ 							<input type="date" name="date" id="inp_date">
+ 						</td>
+ 					</tr>
+
+ 					<tr>
+ 						<td class="label_input">Giới tính</td>
+ 						<td>
+ 							Nam<input type="radio" name="sex" value="male" checked>
+ 							Nữ<input type="radio" name="sex" value="female">
+ 						</td>
+ 					</tr>
+
+ 					<tr>
+ 						<td class="label_input">Tỉnh/ Thành phố</td>
+ 						<td>
+ 							<select id="inp_city" name="city">
+ 								<option>Other</option>
+ 								<option>Hà nội</option>
+ 								<option>TPHCM</option>
+ 								<option>Quảng Ninh</option>
+ 								<option>Ninh Bình</option>
+ 								<option>Nghệ An</option>
+ 							</select>
+ 						</td>
+ 					</tr>
+
+ 					<tr>
+ 						<td class="label_input">Sở thích</td>
+ 						<td>
+ 							<label for="sport">Thể thao</label>
+ 							<input type="checkbox" name="inp_hobby[]" value="sport" id="sport">
+
+ 							<label for="music">Nghe nhạc</label>
+ 							<input type="checkbox" name="inp_hobby[]" value="music" id="music">
+
+ 							<label for="shopping">Mua sắm</label>
+ 							<input type="checkbox" name="inp_hobby[]" value="shopping" id="shopping">
+
+ 							<label for="travel">Du lịch</label>
+ 							<input type="checkbox" name="inp_hobby[]" value="travel" id="travel">
+ 						</td>
+ 					</tr>
+
+ 					<tr>
+ 						<td class="label_input">Mô tả bản thân</td>
+ 						<td>
+ 							<textarea cols="40" rows="5" name="inp_describe" placeholder="Mô tả bản thân"></textarea>
+ 						</td>
+ 					</tr>
+ 				</table>
+ 			</form>
+ 			<div id="google_map">
+ 				<h1>Google map</h1>
+ 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d829.7170918582744!2d105.78767507978093!3d20.980454324033847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135accdd8a1ad71%3A0xa2f9b16036648187!2zSOG7jWMgdmnhu4duIEPDtG5nIG5naOG7hyBCxrB1IGNow61uaCB2aeG7hW4gdGjDtG5n!5e0!3m2!1sen!2s!4v1631887010314!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+ 			</div>
+ 			<div id="fanpage_fb">
+ 				<h1>Fanpage facebook</h1>
+ 				
+ 				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDemo-LTW-Lap-1-103872122052883&tabs=timeline&width=300&height=50&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=false&appId" width="300" height="200" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+ 			</div>
+ 			<div id="messenger">
+ 				<h1>Messenger</h1>
+ 				
+ 			</div>
+ 		</div>
+ 		<div class="clr"></div>
+ 	</div>
+
+ 	<!-- FOOTER -->
+ 	<div id="page_footer"></div>
+</body>
+</html>
